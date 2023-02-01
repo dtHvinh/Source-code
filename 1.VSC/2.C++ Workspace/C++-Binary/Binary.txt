@@ -1,0 +1,9 @@
+		      		  Từ một nhị phân dương 
++   Thêm đối số từng phần tử nhị phân dương
++   1
+___________________________________________
+								Nhị phân âm
+
+Ví dụ: 18 : [0]0010010		Trong đó [] là bit kí hiệu 1 là âm 0 là dương
+    Ngịch đảo  1101101 rồi cộng 1 ==>[1]1101110 = -18
+ 

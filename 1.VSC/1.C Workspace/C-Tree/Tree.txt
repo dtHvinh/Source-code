@@ -1,0 +1,2 @@
+LNR xếp theo thứ tự tăng dần
+RNL xếp theo thứ tự giảm dần

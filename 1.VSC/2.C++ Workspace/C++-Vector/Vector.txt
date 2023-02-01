@@ -1,0 +1,36 @@
+___________________________________________________________________________________________Modifiers______________________________________________________________________________________
+ten-vector.at(n) == arr[n];
+
+ten-vector.size();      	Đang chứa
+ten-vector.capacity();  	Tối đa
+ten-vector.resize(n);   	Thay đổi về n phần tử
+
+ten-vector.pop_back();		Xóa phần từ sau cùng
+ten-vector.push_back(); 	Thêm phần từ sau cùng
+	
+
+ten-vector.front();		Trả về phần tử đầu 
+ten-vector.back();		Trả về phần tử cuối  
+
+ten-vector.assign(n,m);		Từ trước ra sau thay đổi n phần tử thành m
+
+ten-vector.insert(n,m): 	THêm giá trị m vào trước vị trí n
+
+ten-vector.erase(start-position, end-position);		Xóa vùng start tới end
+ten-vector.erase(position);	Xóa vị trí
+
+ten-vector.emplace(n, m);	Tăng kích thước mảng(capacity) và thêm vào vị trí n m 
+ten-vector.emplace_back(m);	Tăng kích thước mảng(capacity) và thêm vào vị trí cuối m 
+
+ten-vector-1.swap(ten-vector-2); 	Hoán đổi 2 vector
+
+ten-vector.clear();	Loại bỏ vùng chứa vécto
+____________________________________________________________________________________________Con trỏ_______________________________________________________________________________________
+ten-vector.begin();	Trỏ vào đầu vecto
+ten-vector.end();	Trỏ vào	cuối vecto
+
+ten-vector.rbegin();	Trỏ vào đầu vecto theo thứ tự từ sau ra trước
+ten-vector.rend();	Trỏ vào	cuối vecto theo thứ tự từ sau ra trước
+________________________________________________________________________________________Truy cập phần tử___________________________________________________________________________________
+ten-vector.front();	Trả phần tử đầu
+ten-vector.back();	Trả phần tử cuối

@@ -1,0 +1,29 @@
+h1{
+    color: red;
+}
+
+#header{
+    background-color: darkblue;
+    color: yellow;
+}
+
+#body{
+    background-color: rgb(200, 188, 188);
+}
+
+#myButton{
+    padding: 12px 22px;
+    text-align: center;
+    font-size: 15px;
+    margin: 3px 2px;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+
+#sanChoi{
+    border:1px solid black;
+    width  : 50%;
+    height : 50%;
+    background-color: white;
+}

@@ -1,0 +1,13 @@
+std::string str = "abc def,ghi";
+std::stringstream ss(str);
+ 
+string token;
+ 
+while (ss >> token)
+{
+    printf("%s\n", token.c_str());
+}
+
+
+
+Phân tách các phần tử

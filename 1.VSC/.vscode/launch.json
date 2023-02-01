@@ -1,0 +1,109 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "ArrayList.Test",
+            "projectName": "1.VSC_6db622a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java",
+            "request": "launch",
+            "mainClass": "Java",
+            "projectName": "1.VSC_6db622a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java",
+            "request": "launch",
+            "mainClass": "Begin.Java",
+            "projectName": "1.VSC_6db622a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "1.VSC_6db622a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch java",
+            "request": "launch",
+            "mainClass": "Begin.java",
+            "projectName": "1.VSC_6db622a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch java",
+            "request": "launch",
+            "mainClass": "Begin.java",
+            "projectName": "VS-Code_bad98214"
+        },
+        {
+            "type": "java",
+            "name": "Launch java",
+            "request": "launch",
+            "mainClass": "Begin.java",
+            "projectName": "VS Code_ba225087"
+        },
+        {
+            "type": "java",
+            "name": "Launch J",
+            "request": "launch",
+            "mainClass": "J",
+            "projectName": "VS Code_ba225087"
+        },
+        {
+            "type": "java",
+            "name": "Launch J",
+            "request": "launch",
+            "mainClass": "J",
+            "projectName": "Code_72d74406"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "Demo",
+            "projectName": "Code_72d74406"
+        },
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [
+                ""
+            ],
+            "stopAtEntry": false,
+            "cwd": "d:/Code",
+            "environment": [],
+            "program": "d:/Code/build/Debug/outDebug",
+            "internalConsoleOptions": "openOnSessionStart",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGw\\mingw64\\bin\\gdb.exe",
+            "externalConsole": false,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal"
+        }
+    ]
+}

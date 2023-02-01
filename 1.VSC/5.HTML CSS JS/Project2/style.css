@@ -1,0 +1,24 @@
+#head{
+    background-color: green;
+    color: white;
+    border: 3px solid black;
+}
+#place{
+    background-color: white;
+    border: 1px solid black;
+}
+#pain{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    background-color: gray;
+}
+button{
+    padding: 12px 22px;
+    text-align: center;
+    font-size: 15px;
+    margin: 3px 2px;
+    cursor: pointer;
+    background-color: none;
+
+}
