@@ -3,4 +3,4 @@ Thay đổi tùy chỉnh
 Điền vào Trên description Trong github
 Commit to main
 
-Sau đó Push/Fetch origin giữa trên khung thoại github
+Sau đó Push Origin giữa trên khung thoại github
