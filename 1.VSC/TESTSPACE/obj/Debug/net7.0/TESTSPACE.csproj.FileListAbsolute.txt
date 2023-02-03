@@ -1,0 +1,15 @@
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\bin\Debug\net7.0\TESTSPACE.exe
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\bin\Debug\net7.0\TESTSPACE.deps.json
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\bin\Debug\net7.0\TESTSPACE.runtimeconfig.json
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\bin\Debug\net7.0\TESTSPACE.dll
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\bin\Debug\net7.0\TESTSPACE.pdb
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.csproj.AssemblyReference.cache
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.AssemblyInfoInputs.cache
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.AssemblyInfo.cs
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.csproj.CoreCompileInputs.cache
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.dll
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\refint\TESTSPACE.dll
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.pdb
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\TESTSPACE.genruntimeconfig.cache
+D:\Code\Main\Coding-File\1.VSC\TESTSPACE\obj\Debug\net7.0\ref\TESTSPACE.dll

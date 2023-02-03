@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\Main\\Coding-File\\2.VS\\Project\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "D:\\Code\\Main\\Coding-File\\2.VS\\Project\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "D:\\Code\\Main\\Coding-File\\2.VS\\Project\\ConsoleApp1\\KeoBuaBao.csproj",
+      "projectName": "KeoBuaBao",
+      "projectPath": "D:\\Code\\Main\\Coding-File\\2.VS\\Project\\ConsoleApp1\\KeoBuaBao.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "D:\\Code\\Main\\Coding-File\\2.VS\\Project\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
