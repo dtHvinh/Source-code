@@ -6,6 +6,13 @@
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "ArrayList.Test",
+            "projectName": "1.VSC_fa40d34c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "ArrayList.Test",
             "projectName": "1.VSC_6db622a0"
         },
         {

@@ -1,8 +1,6 @@
-﻿using System;
+﻿
+Console.WriteLine("Hello, World!");
+Console.Write("hi");
+Console.Write("yo");
+Console.Write("A");
 
-public class Program{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine("HI");
-    }
-}

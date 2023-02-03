@@ -8,24 +8,32 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "D:\\Code\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\VS-Code\\0.C# Workspace\\0.Cs Workspace.csproj",
-      "projectName": "0.Cs Workspace",
-      "projectPath": "D:\\Code\\VS-Code\\0.C# Workspace\\0.Cs Workspace.csproj",
+      "projectUniqueName": "D:\\Code\\Main\\Coding-File\\1.VSC\\0.C# Workspace\\0.C# Workspace.csproj",
+      "projectName": "0.C# Workspace",
+      "projectPath": "D:\\Code\\Main\\Coding-File\\1.VSC\\0.C# Workspace\\0.C# Workspace.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\VS-Code\\0.C# Workspace\\obj\\",
+      "outputPath": "D:\\Code\\Main\\Coding-File\\1.VSC\\0.C# Workspace\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Code\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

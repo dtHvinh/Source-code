@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "String.Test",
+            "projectName": "Coding-File_26aee5b2"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/2.VS/C# and Unity Course/Exercise1/Exercise1/bin/Debug/net6.0/Exercise1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/2.VS/C# and Unity Course/Exercise1/Exercise1",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

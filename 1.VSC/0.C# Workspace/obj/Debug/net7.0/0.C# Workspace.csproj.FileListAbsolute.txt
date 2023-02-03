@@ -1,0 +1,15 @@
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\bin\Debug\net7.0\0.C# Workspace.exe
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\bin\Debug\net7.0\0.C# Workspace.deps.json
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\bin\Debug\net7.0\0.C# Workspace.runtimeconfig.json
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\bin\Debug\net7.0\0.C# Workspace.dll
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\bin\Debug\net7.0\0.C# Workspace.pdb
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.csproj.AssemblyReference.cache
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.AssemblyInfoInputs.cache
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.AssemblyInfo.cs
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.csproj.CoreCompileInputs.cache
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.dll
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\refint\0.C# Workspace.dll
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.pdb
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\0.C# Workspace.genruntimeconfig.cache
+D:\Code\Main\Coding-File\1.VSC\0.C# Workspace\obj\Debug\net7.0\ref\0.C# Workspace.dll
