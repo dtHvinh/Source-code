@@ -10,5 +10,6 @@ public class Test {
         ages.add(5);
         ages.add(6);
         System.out.print(ages.get(0));
+        ages.
     }
 }

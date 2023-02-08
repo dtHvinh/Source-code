@@ -1,0 +1,10 @@
+-Non static class có thể tạo:
+	+Non-static method.		Có thể gọi sau khi tạo 1 instance và gọi bằng instance đó
+					Ví dụ:	display a = new display();	
+						a.hello();
+   	
+	+Static method.		Có thể gọi trực tiếp thông qua tên class và dấu '.'
+					Ví dụ:	display.hello();
+							
+
+-static class chỉ có thể tạo được static method.

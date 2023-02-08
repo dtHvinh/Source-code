@@ -1,0 +1,15 @@
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.csproj.AssemblyReference.cache
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.AssemblyInfoInputs.cache
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.AssemblyInfo.cs
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.csproj.CoreCompileInputs.cache
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\bin\Debug\net6.0\AnotherGame.exe
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\bin\Debug\net6.0\AnotherGame.deps.json
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\bin\Debug\net6.0\AnotherGame.runtimeconfig.json
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\bin\Debug\net6.0\AnotherGame.dll
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\bin\Debug\net6.0\AnotherGame.pdb
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.dll
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\refint\AnotherGame.dll
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.pdb
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\AnotherGame.genruntimeconfig.cache
+D:\Code\Main\Coding-File\2.VS\Project\AnotherGame\obj\Debug\net6.0\ref\AnotherGame.dll

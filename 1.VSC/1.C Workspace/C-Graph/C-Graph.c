@@ -9,10 +9,12 @@
 
 
 int main(){
-    Graph e;
-    init_Graph(&e,3);
-    add_edge(&e,1,2);
-    add_edge(&e,1,3);
-    add_edge(&e,3,1);
-    neighbors(&e,1);
+    Graph g;
+    init_Graph(&g,5);
+    add_edge(&g, 2, 3);
+    add_edge(&g, 2, 4);
+    add_edge(&g, 2, 1);
+    add_edge(&g, 2, 5);
+    List t = neighbors(&g,2);
+    printList(t);
 }

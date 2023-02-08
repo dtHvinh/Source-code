@@ -50,7 +50,9 @@
     "random": "cpp",
     "limits": "cpp",
     "valarray": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "fstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled",          // Gach duoi cho sai
 

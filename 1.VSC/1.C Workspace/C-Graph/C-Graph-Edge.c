@@ -1,4 +1,4 @@
-#include "D:\Code\1.VSC\1.C Workspace\Ex\List.c"
+#include "D:\Code\Main\Coding-File\1.VSC\1.C Workspace\C-List\List.c"
 #define Max_M 100
 /*
 Cài đặt theo phương thức các cung 0,1,.. sẽ chứa các cặp đỉnh u,v ví dụ như [1,2];
@@ -58,9 +58,10 @@ List neighbors(Graph *pG , int x){
     for(int i = 0 ; i < pG->m ; i++){
         int l = pG->E[i].u;
         int r = pG->E[i].v;
-        if( l == x ) insertList(r , endList(g) , &g);
-        if( r == x ) insertList(l , endList(g) , &g);
+        if( l == x ) insertList(r, &g);
+        if( r == x ) insertList(l, &g);
     }
     return g;
 }
+
 

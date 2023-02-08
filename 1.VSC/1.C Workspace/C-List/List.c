@@ -6,13 +6,14 @@ struct node{
     struct node* next;
 };
 typedef struct node* List;
+typedef List Pos;
 
 List makenullList(List *L){
     (*L) =(List)malloc(sizeof(List));
     (*L)->next = NULL;
 }
 
-void append(int x,List *L){             //con tro bac 2
+void insertList(int x,List *L){             //con tro bac 2
     List P = *L;
     while(P->next!=NULL){
         P=P->next;
@@ -32,9 +33,17 @@ List readList(){
     for(int i=0;i<n;i++){
         int x;
         scanf("%d",&x);
-        append(x,&A);
+        insertList(x,&A);
     }
     return A;
+}
+
+Pos endList(List L){
+    Pos pos;
+    while(pos->next != NULL){
+        pos = pos->next;
+    }
+    return pos;
 }
 
 void printList(List L){
@@ -44,38 +53,6 @@ void printList(List L){
         P=P->next;
     }
 }
-void Menu(List *L){
-    while(1==1){
-    printf("=============MENU============");
-    printf("\n1. Nhap du lieu");
-    printf("\n2. In toan bo");    
-    printf("\n3. Ket thuc\n");
-    printf("=============================\n");
-    int t;
-    printf("Nhap lua chon:");
-    scanf("%d",&t);
-    if(t==1){
-        printf("Nhap X:");
-        int x;
-        scanf("%d",&x);
-        append(x,L);
-        system("cls");
-    }
-    else if(t==2){
-        printf("===========KET==QUA=========");
-        printf("Danh sach nay la:");
-        printList(*L);
-        break;
-    }
-    else break; 
-    }
-}
 
-int main(){
-    List L;
-    makenullList(&L);
-    L=readList(&L);
-    printList(L);
-    return 0;
-}
+
 

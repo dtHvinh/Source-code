@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Mainclass2",
+            "request": "launch",
+            "mainClass": "BaiTap2.Mainclass2",
+            "projectName": "1.VSC_fa40d34c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java",
+            "request": "launch",
+            "mainClass": "Java",
+            "projectName": "1.VSC_fa40d34c"
+        },
+        {
+            "type": "java",
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "ArrayList.Test",

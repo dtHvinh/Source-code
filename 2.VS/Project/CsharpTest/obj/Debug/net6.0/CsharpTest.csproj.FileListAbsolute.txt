@@ -1,0 +1,15 @@
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\bin\Debug\net6.0\CsharpTest.exe
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\bin\Debug\net6.0\CsharpTest.deps.json
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\bin\Debug\net6.0\CsharpTest.runtimeconfig.json
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\bin\Debug\net6.0\CsharpTest.dll
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\bin\Debug\net6.0\CsharpTest.pdb
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.csproj.AssemblyReference.cache
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.AssemblyInfoInputs.cache
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.AssemblyInfo.cs
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.csproj.CoreCompileInputs.cache
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.dll
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\refint\CsharpTest.dll
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.pdb
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\CsharpTest.genruntimeconfig.cache
+D:\Code\Main\Coding-File\2.VS\Project\CsharpTest\obj\Debug\net6.0\ref\CsharpTest.dll
