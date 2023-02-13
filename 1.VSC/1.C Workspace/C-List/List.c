@@ -46,6 +46,39 @@ Pos endList(List L){
     return pos;
 }
 
+void deleteList(List *L){
+    Pos p = *L;
+    while(p->next->next != NULL){
+        p = p->next;
+    }
+
+    free(p->next);
+    p->next = NULL;
+}
+
+int elementAt(List L,int x){
+    List pos = L;
+    if(x ==0) return pos->next->data;
+
+    while (x--)
+    {
+        pos = pos->next;
+    }
+    return pos->data;
+    
+}
+
+int length(List L){
+    List pos = L;
+    int c = 0;
+    while (pos->next != NULL)
+    {
+        pos = pos->next;
+        c++;
+    }
+    return c;
+}
+
 void printList(List L){
     struct node* P=L;
     while(P->next!=NULL){

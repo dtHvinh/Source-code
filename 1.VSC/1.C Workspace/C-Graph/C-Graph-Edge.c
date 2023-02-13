@@ -36,22 +36,6 @@ int deg(Graph *pG,int x){
     return c;
 }
 
-// Các lân cận của đỉnh x;
-// void neighbors(Graph *pG,int x){
-//     for(int i = 0 ; i < pG->m ; i++){
-//         int c = pG->E[i].u ;
-//         int e = pG->E[i].v;
-//         if(c == x){
-//             printf("%d ",e);
-//             continue;
-//         }  
-//         if(e == x){
-//             printf("%d ",c);
-//             continue;
-//         }
-//     }
-// }
-
 List neighbors(Graph *pG , int x){
     List g;
     makenullList(&g);

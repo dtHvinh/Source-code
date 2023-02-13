@@ -58,5 +58,10 @@
 
   "editor.tokenColorCustomizations": {        // chinh mau comment
     "comments": "#0e9d1a"
-  }
+  },
+  "java.project.sourcePaths": [
+    "3.JAVA Workspace/Z.BaiTap/Buoi 1/BaiTap2/src",
+    "3.JAVA Workspace/Z.BaiTap/BaiTap3/src",
+    "3.JAVA Workspace/Z.BaiTap/Buoi 2"
+  ]
 }
