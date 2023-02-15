@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stakkk",
+            "request": "launch",
+            "mainClass": "stakkk",
+            "projectName": "1.VSC_fa40d34c"
+        },
+        {
+            "type": "java",
             "name": "Launch BaiTap1",
             "request": "launch",
             "mainClass": "BaiTap1",

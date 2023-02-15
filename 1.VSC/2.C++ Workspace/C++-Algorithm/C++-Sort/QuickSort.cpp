@@ -43,6 +43,6 @@ int main(){
     while(a >> num){
         nums.push_back(num);
     }
-
-    cout<<nums.size();
+    quickSort(nums,0,nums.size()-1);
+    for(auto i : nums) cout<<i<<" ";
 }
