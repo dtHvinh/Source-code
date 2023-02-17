@@ -52,7 +52,9 @@
     "valarray": "cpp",
     "ostream": "cpp",
     "*.tcc": "cpp",
-    "fstream": "cpp"
+    "fstream": "cpp",
+    "list": "cpp",
+    "unordered_set": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled",          // Gach duoi cho sai
 
