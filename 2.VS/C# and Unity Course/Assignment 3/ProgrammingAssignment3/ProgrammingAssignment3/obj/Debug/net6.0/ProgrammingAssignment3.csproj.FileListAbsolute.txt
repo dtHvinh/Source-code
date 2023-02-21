@@ -1,0 +1,17 @@
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ProgrammingAssignment3.exe
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ProgrammingAssignment3.deps.json
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ProgrammingAssignment3.runtimeconfig.json
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ProgrammingAssignment3.dll
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ProgrammingAssignment3.pdb
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\bin\Debug\net6.0\ConsoleCards.dll
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.csproj.AssemblyReference.cache
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.AssemblyInfoInputs.cache
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.AssemblyInfo.cs
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.csproj.CoreCompileInputs.cache
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.csproj.CopyComplete
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.dll
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\refint\ProgrammingAssignment3.dll
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.pdb
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ProgrammingAssignment3.genruntimeconfig.cache
+D:\Code\Main\Source-Code\2.VS\C# and Unity Course\Assignment 3\ProgrammingAssignment3\ProgrammingAssignment3\obj\Debug\net6.0\ref\ProgrammingAssignment3.dll

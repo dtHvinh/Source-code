@@ -1,0 +1,15 @@
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\bin\Debug\net6.0\BaiCao.exe
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\bin\Debug\net6.0\BaiCao.deps.json
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\bin\Debug\net6.0\BaiCao.runtimeconfig.json
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\bin\Debug\net6.0\BaiCao.dll
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\bin\Debug\net6.0\BaiCao.pdb
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.csproj.AssemblyReference.cache
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.AssemblyInfoInputs.cache
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.AssemblyInfo.cs
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.csproj.CoreCompileInputs.cache
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.dll
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\refint\BaiCao.dll
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.pdb
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\BaiCao.genruntimeconfig.cache
+D:\Code\Main\Source-Code\2.VS\Project\BaiCao\obj\Debug\net6.0\ref\BaiCao.dll
