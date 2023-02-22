@@ -1,4 +1,4 @@
-#include "D:\Code\Main\Coding-File\1.VSC\1.C Workspace\C-List\List.c"
+#include "D:\Code\Main\Source-Code\1.VSC\1.C Workspace\C-List\List.c"
 #define Max_M 100
 /*
 Cài đặt theo phương thức các cung 0,1,.. sẽ chứa các cặp đỉnh u,v ví dụ như [1,2];

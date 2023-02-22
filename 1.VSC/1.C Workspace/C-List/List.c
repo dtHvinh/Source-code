@@ -1,5 +1,4 @@
 #include<stddef.h>
-#include<stdio.h>
 #include<stdlib.h>
 struct node{
     int data;
@@ -25,19 +24,6 @@ void insertList(int x,List *L){             //con tro bac 2
     P->next = A;
 }
 
-List readList(){
-    List A;
-    makenullList(&A);
-    int n;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        int x;
-        scanf("%d",&x);
-        insertList(x,&A);
-    }
-    return A;
-}
-
 Pos endList(List L){
     Pos pos;
     while(pos->next != NULL){
@@ -51,7 +37,6 @@ void deleteList(List *L){
     while(p->next->next != NULL){
         p = p->next;
     }
-
     free(p->next);
     p->next = NULL;
 }
