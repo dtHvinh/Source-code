@@ -18,6 +18,7 @@ using namespace std;
 
 
 int main(){
+    vector<vector<int>>a = {{1,2,4},{1,2,3}};
     
 
 }

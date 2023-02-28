@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include"D:\Code\Main\Source-Code\1.VSC\1.C Workspace\C-List\List.c"
 
 typedef struct 
@@ -20,10 +19,10 @@ void init_graph(graph *p, int n){
 }
 
 // add an edge to graph
-void add_edge(graph *g, int u, int v){
+void add_edge(graph *g, int u, int v, int type){
     g->arr[u][v] = 1;
-    // add the line under if non-direct graph
-    g->arr[v][u] = 1;
+    if(type == 2)
+        g->arr[v][u] = 1;
 }
 
 List neighbors(graph *g, int x){

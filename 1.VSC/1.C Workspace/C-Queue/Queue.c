@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 struct node{
     int data;
@@ -6,16 +5,20 @@ struct node{
 };
 typedef struct node* Queue;
 
+// init_ queue
 void makenullQueue(Queue *A){
     (*A) = (Queue)malloc(sizeof(Queue));
     (*A) -> next = NULL;
 }
 
+
+// check if queue is empty
 int emptyQueue(Queue L) {
     return (L->next==NULL);
 }
 
-void enQueue(int x,Queue *A){
+// add 1 element to Queue
+void enQueue(Queue *A, int x){
     Queue temp;
     makenullQueue(&temp);
     Queue P = *A;
@@ -27,6 +30,7 @@ void enQueue(int x,Queue *A){
     P->next    = temp;
 }
 
+// pop the first element in a line
 void deQueue(Queue *A){
     Queue temp,P=*A;
     temp=P->next; 
@@ -34,47 +38,11 @@ void deQueue(Queue *A){
     free(temp);
 }
 
-void inDau(Queue A){
+// return the value of the very first element
+int frontValue(Queue A){
     Queue P=A;
-    printf("%d",P->next->data);
+    return P->next->data;
 } 
 
-int dem(Queue A){
-    Queue P =A;
-    int dem=0;
-    while(P->next != NULL){
-        dem++;
-        P=P->next;
-    }
-    return dem;
-}
 
-int main(){
-    int n;
-    Queue A;
-    makenullQueue(&A);
-    scanf("%d",&n);
-    fflush(stdin);
-    for(int i=1;i<=n;i++){
-        char c;
-        scanf("%c",&c);
-        if(c == 'E'){
-            int n;
-            scanf("%d",&n);
-            fflush(stdin);
-            enQueue(n,&A);
-            printf("%d\n",dem(A));
-        }
-        else{
-            if(emptyQueue(A)){
-                printf("-1 ");
-                printf("%d",dem(A));
-            }
-            else{
-                inDau(A);
-                deQueue(&A);
-                printf(" %d",dem(A));
-            }
-        }
-    }
-}
+

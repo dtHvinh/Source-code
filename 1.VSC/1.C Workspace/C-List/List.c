@@ -1,10 +1,10 @@
 #include<stddef.h>
 #include<stdlib.h>
-struct node{
+struct nodee{
     int data;
-    struct node* next;
+    struct nodee* next;
 };
-typedef struct node* List;
+typedef struct nodee* List;
 typedef List Pos;
 
 List makenullList(List *L){
@@ -64,13 +64,6 @@ int length(List L){
     return c;
 }
 
-void printList(List L){
-    struct node* P=L;
-    while(P->next!=NULL){
-        printf("%d ",P->next->data);
-        P=P->next;
-    }
-}
 
 
 

@@ -3,4 +3,7 @@
 # b = 'vinh'
 # Output = Hello Vinh   <==>  print("Hello " + b)    ||     print("Hello",b)
 
-print("helo")
+a ="Hello"
+
+print(a[::-1]);
+

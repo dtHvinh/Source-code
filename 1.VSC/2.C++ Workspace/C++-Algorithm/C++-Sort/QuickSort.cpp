@@ -9,7 +9,7 @@ int Pivot(vector<int>nums, int s , int e){
     return nums[mid];
 }
 
-int Change(vector<int>&nums, int s, int e ,int pivot){
+int Partition(vector<int>&nums, int s, int e ,int pivot){
     int l = s;
     int r = e;
     while(l <= r){
@@ -28,21 +28,16 @@ int Change(vector<int>&nums, int s, int e ,int pivot){
 void quickSort(vector<int>&nums , int s , int e){
     if(s >= e) return;
     int t = Pivot(nums,s,e);
-    int k = Change(nums, s , e , t);
+    int k = Partition(nums, s , e , t);
     quickSort(nums, s, k-1);
-    quickSort(nums, k ,e);
+    quickSort(nums, k+1 ,e);
 }
 
 
 
 
 int main(){
-    vector<int>nums;
-    ifstream a("D:/Code/Document/DataForSort.txt");
-    int num;
-    while(a >> num){
-        nums.push_back(num);
-    }
+    vector<int>nums={3,4,6,2,7,8,5,9,1};
     quickSort(nums,0,nums.size()-1);
-    for(auto i : nums) cout<<i<<" ";
+    for(auto i: nums) cout<<i<<" ";
 }

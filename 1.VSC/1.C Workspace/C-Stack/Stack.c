@@ -1,20 +1,19 @@
 #include<stdlib.h>
 
-struct nodee{
+struct nodeee{
     int val;
-    struct nodee* next;
+    struct nodeee* next;
 };
 
-typedef struct nodee* Stack;
+typedef struct nodeee* Stack;
 
 void makenullStack(Stack *a){
-    (*a)=(Stack)malloc(sizeof(Stack));
+    (*a) = (Stack)malloc(sizeof(Stack));
     (*a)->next = NULL;
 }
 
 int emptyStack(Stack *a){
-    Stack pos = *a;
-    return pos->next == NULL;
+    return (*a)->next == NULL;
 }
 
 void push(Stack *a, int x){
@@ -39,7 +38,7 @@ int top(Stack *a){
 }
 
 void pop(Stack *a){
-    struct nodee* pos = *a;
+    Stack pos = *a;
     while (pos->next->next != NULL)
     {
         pos = pos->next;
@@ -48,4 +47,7 @@ void pop(Stack *a){
     free(pos->next);
     pos->next = NULL;
 }
+
+
+
 
