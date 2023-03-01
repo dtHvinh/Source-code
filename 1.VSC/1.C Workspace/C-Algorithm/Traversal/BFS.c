@@ -1,5 +1,5 @@
-#include"D:\Code\Main\Coding-File\1.VSC\1.C Workspace\C-Graph\C-Graph-Edge.c"
-#include"D:\Code\Main\Coding-File\1.VSC\1.C Workspace\C-Stack\Stack.c"
+#include"D:\Code\Main\Source-Code\1.VSC\1.C Workspace\C-Graph\C-Graph-Edge.c"
+#include"D:\Code\Main\Source-Code\1.VSC\1.C Workspace\C-Stack\Stack.c"
 
 void BFS(Graph *a){
     Stack st;
