@@ -62,3 +62,28 @@ Tuy nhiên phương pháp bên phải ít rủi ro hơn t=khi làm việc với 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Một mảng đã sort theo thứ tự tăng dần thì khi đổi chổ 2 vị trí đầu/cuối tăng/giảm dần đến trùng nhau thì thứ tự
 sẽ thay đổi thành giảm dần.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+class Stack {
+private:
+    T* elements;
+    int top;													
+    int capacity;
+
+public:
+    Stack(int size) : top(-1), capacity(size) {       <--Viết tắt
+        elements = new T[capacity];
+    }
+
+struct person{
+    int age;
+    char name;
+};
+
+int main(){
+    person a = person{1,'v'};                          <--Viết tắt
+    std::cout<<a.name;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+

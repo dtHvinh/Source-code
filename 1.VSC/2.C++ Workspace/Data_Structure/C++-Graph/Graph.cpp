@@ -2,10 +2,11 @@
 #include<vector>
 #include<stack>
 #include<list>
+#include<queue>
 
 
 class Graph{
-    private:
+    protected:
     int _max_VERTEX;
     int edges[100][100];
     
@@ -28,7 +29,7 @@ class Graph{
     }
 
     public:
-    /// @brief Initialize Graph
+    /// @brief Graph Initialization 
     /// @param No_of_VERTEX 
     Graph(int No_of_VERTEX){
         this->_max_VERTEX = No_of_VERTEX;
@@ -69,10 +70,10 @@ class Graph{
         {
             int token = st.top();st.pop();
 
-            cout<<token<<endl;
+            std::cout<<token<<std::endl;
             visited[token] = 1;
 
-            list<int> _neighbors_of_token = neighbors(token);
+            std::list<int> _neighbors_of_token = neighbors(token);
             for(auto i : _neighbors_of_token )
             {
                 if( !visited[i] )
@@ -89,19 +90,19 @@ class Graph{
 
         int x = _Start_VERTEX;
 
-        cout<<x;
+        std::cout<<x;
         visited[x] = 1;
 
         q.push(x);
         while (!q.empty())
         {
-            cout<<endl;
+            std::cout<<std::endl;
             int token = q.front();q.pop();
 
-            list<int> _neighbors_of_token = neighbors(token);
+            std::list<int> _neighbors_of_token = neighbors(token);
             for(auto i : _neighbors_of_token){
                 if(!visited[i]){
-                    cout<<i<<" ";
+                    std::cout<<i<<" ";
                     visited[i] = 1;
                     q.push(i);
                 }
@@ -111,6 +112,15 @@ class Graph{
     }
 
 };
+
+int main(){
+    Graph a = Graph(5);
+    a.add(1,2,2);
+    a.add(1,2,4);
+
+    a.DFS(1);
+
+}
 
 
 
