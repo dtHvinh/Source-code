@@ -62,12 +62,12 @@ class Graph{
         }
 };
 
-class Grap_Algorithm : public Graph{
+class Graph_Algorithm : public Graph{
     public:
         Graph_Algorithm(int number_of_vertex) : Graph(number_of_vertex){};
 
         void Dijkstra_Algorithm(){
-            vector<
+            
         }
 
 };

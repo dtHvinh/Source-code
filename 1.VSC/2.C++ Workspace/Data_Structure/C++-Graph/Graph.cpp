@@ -9,7 +9,8 @@ class Graph{
     protected:
     int _max_VERTEX;
     int edges[100][100];
-    
+
+    private:
     /// @brief Check if 2 VERTEX ARE ADJECENT.
     /// @param _VERTEX_1 
     /// @param _VERTEX_2 
@@ -30,7 +31,7 @@ class Graph{
 
     public:
     /// @brief Graph Initialization 
-    /// @param No_of_VERTEX 
+    /// @param No_of_VERTEX Initialize the number of vertex in Graph.
     Graph(int No_of_VERTEX){
         this->_max_VERTEX = No_of_VERTEX;
         init_Graph();
@@ -58,67 +59,89 @@ class Graph{
         }
         return res;
     }
+};
 
-    void DFS(int _Start_VERTEX){
-        std::vector<int>visited(this->_max_VERTEX+1, 0);
-        std::stack<int> st;
+class Traversal_Algorithm : public Graph{
+    public:
+        Traversal_Algorithm(int number_of_vertex) : Graph(number_of_vertex){};
+        /**
+         * @brief DFS algorithm start with a vertex.
+         * 
+         * @param _Start_VERTEX The starting vertex.
+         */
+        void DFS(int _Start_VERTEX = 1){
+            std::vector<int>visited(this->_max_VERTEX+1, 0);
+            std::stack<int> st;
 
-        int x = _Start_VERTEX;
-    
-        st.push(x);
-        while(!st.empty())
-        {
-            int token = st.top();st.pop();
-
-            std::cout<<token<<std::endl;
-            visited[token] = 1;
-
-            std::list<int> _neighbors_of_token = neighbors(token);
-            for(auto i : _neighbors_of_token )
+            int x = _Start_VERTEX;
+        
+            st.push(x);
+            while(!st.empty())
             {
-                if( !visited[i] )
+                int token = st.top();st.pop();
+
+                std::cout<<token<<std::endl;
+                visited[token] = 1;
+
+                std::list<int> _neighbors_of_token = neighbors(token);
+                for(auto i : _neighbors_of_token )
                 {
-                    st.push(i);
+                    if( !visited[i] )
+                    {
+                        st.push(i);
+                    }
                 }
             }
         }
-    }
 
-    void BFS(int _Start_VERTEX){
-        std::vector<int>visited(this->_max_VERTEX+1, 0);
-        std::queue<int> q;
 
-        int x = _Start_VERTEX;
+        /**
+         * @brief BFS algorithm start with a vertex.
+         * 
+         * @param _Start_VERTEX The starting vertex.
+         */
+        void BFS(int _Start_VERTEX = 1){
+            std::vector<int>visited(this->_max_VERTEX+1, 0);
+            std::queue<int> q;
 
-        std::cout<<x;
-        visited[x] = 1;
+            int x = _Start_VERTEX;
 
-        q.push(x);
-        while (!q.empty())
-        {
-            std::cout<<std::endl;
-            int token = q.front();q.pop();
+            std::cout<<x;
+            visited[x] = 1;
 
-            std::list<int> _neighbors_of_token = neighbors(token);
-            for(auto i : _neighbors_of_token){
-                if(!visited[i]){
-                    std::cout<<i<<" ";
-                    visited[i] = 1;
-                    q.push(i);
-                }
-            }    
+            q.push(x);
+            while (!q.empty())
+            {
+                std::cout<<std::endl;
+                int token = q.front();q.pop();
+
+                std::list<int> _neighbors_of_token = neighbors(token);
+                for(auto i : _neighbors_of_token){
+                    if(!visited[i]){
+                        std::cout<<i<<" ";
+                        visited[i] = 1;
+                        q.push(i);
+                    }
+                }    
+                
+            }
+        }
+
+
+        int connected_components(){
             
         }
-    }
 
 };
 
-int main(){
-    Graph a = Graph(5);
-    a.add(1,2,2);
-    a.add(1,2,4);
 
-    a.DFS(1);
+int main(){
+    Traversal_Algorithm a(2);
+    a.add(1,2,2);
+
+
+    a.BFS();
+
 
 }
 
