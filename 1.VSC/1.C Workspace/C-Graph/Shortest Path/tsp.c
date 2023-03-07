@@ -137,13 +137,13 @@ int main(){
 	printf("Danh sach cac canh cua do thi\n");
 	in_ds_canh(ds_canh, n*(n-1)/2, 0);
 	
-	bubble_sort(ds_canh, n*(n-1)/2);
-	printf("Danh sach cac canh cua do thi da SAP XEP\n");
-	in_ds_canh(ds_canh, n*(n-1)/2, 0);
-	canh PA[n];
-	greedy(ds_canh, n, PA);
-	printf("PHUONG AN\n");
+	// bubble_sort(ds_canh, n*(n-1)/2);
+	// printf("Danh sach cac canh cua do thi da SAP XEP\n");
+	// in_ds_canh(ds_canh, n*(n-1)/2, 0);
+	// canh PA[n];
+	// greedy(ds_canh, n, PA);
+	// printf("PHUONG AN\n");
 	
-	in_ds_canh(PA,n,1);
-	return 0;
+	// in_ds_canh(PA,n,1);
+	// return 0;
 }

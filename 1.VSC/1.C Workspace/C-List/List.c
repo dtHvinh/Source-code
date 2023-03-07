@@ -45,7 +45,7 @@ int elementAt(List L,int x){
     List pos = L;
     if(x ==0) return pos->next->data;
 
-    while (x--)
+    while (x-->=0)
     {
         pos = pos->next;
     }
@@ -63,6 +63,7 @@ int length(List L){
     }
     return c;
 }
+
 
 
 

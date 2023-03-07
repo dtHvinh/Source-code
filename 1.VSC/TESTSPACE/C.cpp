@@ -15,12 +15,25 @@
 
 using namespace std;
 
+class person{
+    public:
+        void sayA(){
+            cout<<"AAAAAA";
+        }
+        virtual void sayB(){};
+};
+
+class bad_person : public person{
+    public:
+        void sayB() override {
+            cout<<"BBBBBB";
+        }
+};
 
 
 int main(){
-    string a = "123456789";
-    
-    cout<<a.substr(2,2);
+    bad_person a;
+    a.sayB();
 }
 
 

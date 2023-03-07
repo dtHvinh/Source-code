@@ -271,7 +271,7 @@ int main(){
 
     Algorithm a(array);
     
-    a.bucket_Sort();
+    a.quick_Sort();
     a.print();
 
 }
