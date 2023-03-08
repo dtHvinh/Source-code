@@ -1,0 +1,15 @@
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\bin\Debug\net6.0\TheTrader.exe
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\bin\Debug\net6.0\TheTrader.deps.json
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\bin\Debug\net6.0\TheTrader.runtimeconfig.json
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\bin\Debug\net6.0\TheTrader.dll
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\bin\Debug\net6.0\TheTrader.pdb
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.csproj.AssemblyReference.cache
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.AssemblyInfoInputs.cache
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.AssemblyInfo.cs
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.csproj.CoreCompileInputs.cache
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.dll
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\refint\TheTrader.dll
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.pdb
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\TheTrader.genruntimeconfig.cache
+D:\Code\Main\Source-Code\2.VS\Project\TheTrader\obj\Debug\net6.0\ref\TheTrader.dll
