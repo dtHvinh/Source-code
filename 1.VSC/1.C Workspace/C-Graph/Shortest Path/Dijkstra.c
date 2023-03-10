@@ -70,17 +70,18 @@ void Dijkstra(graph *g, int s){
 
 int main(){
     graph g;
-    init_graph(&g, 6);
-    add(&g, 1, 2, 7);
-    add(&g, 1, 3, 1);
-    add(&g, 2, 4, 4);
-    add(&g, 2, 6, 1);
-    add(&g, 3, 2, 5);
-    add(&g, 3, 5, 2);
-    add(&g, 3, 6, 7);
-    add(&g, 5, 4, 5);
-    add(&g, 5, 2, 2);
-    add(&g, 6, 5, 3);  
+    // init_graph(&g, 6);
+    // add(&g, 1, 2, 7);
+    // add(&g, 1, 3, 1);
+    // add(&g, 2, 4, 4);
+    // add(&g, 2, 6, 1);
+    // add(&g, 3, 2, 5);
+    // add(&g, 3, 5, 2);
+    // add(&g, 3, 6, 7);
+    // add(&g, 5, 4, 5);
+    // add(&g, 5, 2, 2);
+    // add(&g, 6, 5, 3);
+
     Dijkstra(&g, 1);
     return 0;
 }
