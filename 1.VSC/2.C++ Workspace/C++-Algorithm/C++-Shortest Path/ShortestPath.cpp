@@ -19,7 +19,6 @@ class Graph{
 
     private:
 
-
         /**
          * @brief Check the connection between 2 vertex.
          * 
@@ -56,7 +55,6 @@ class Graph{
             connection[start_VERTEX][end_VERTEX] = weight;
         }
 
-
         
         /**
          * @brief Returns a list of neighbors of a given vertex in the graph.
@@ -91,7 +89,6 @@ class Graph_Algorithm : public Graph{
         
             /* 
              * Represent the current shortest path from starting_point to i vertex.
-             *
              * Set path from starting point to all others vertex to default value(inf) and path to itseft is 0.
             */                              
             std::vector<int>path_to_ (this->max_VERTEX+1, inf); path_to_[starting_point] = 0;  
@@ -138,6 +135,37 @@ class Graph_Algorithm : public Graph{
             }
 
         }
+
+        void Bellman_Algorithm(int starting_point){
+            int inf = INT_MAX;
+
+            std::vector<int> path_to ( this->max_VERTEX+1, inf);
+            path_to[ starting_point ] = 0;
+
+            std::vector<int> previous( this->max_VERTEX+1, 0);
+            previous[ starting_point ] = -1;
+
+            // Loop max_VERTEX -1 times.
+            for(size_t loop = 1; loop < max_VERTEX; loop++){
+                
+                for(size_t vertex = 1; vertex <= max_VERTEX; vertex++){
+                    
+                    std::list<int> list = neighbors( vertex );
+                    for(auto i : list){
+                        if(path_to[vertex] != inf && path_to[vertex] + connection[vertex][i] < path_to[i]){
+                            path_to[ i ] = path_to[vertex] + connection[vertex][i];
+                            previous[ i ] = vertex;
+                        }
+                    }
+
+                }
+
+            }
+            for(size_t vertex = 1; vertex <= max_VERTEX; vertex++){
+                printf("Shortest path from %d to %d is %d, pre of %d is %d\n", starting_point, vertex, path_to[ vertex ], vertex, previous[ vertex ]);
+            }
+            
+        }
 };
 
 #include<iostream>
@@ -156,7 +184,7 @@ int main(){
     g.add(5, 2, 2);
     g.add(6, 5, 3);    
     
-    g.Dijstra_Algorithm(1);
+    g.Bellman_Algorithm(1);
 }
 
 
