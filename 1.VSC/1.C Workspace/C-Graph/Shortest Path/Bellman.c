@@ -16,6 +16,7 @@ void init_Graph(Graph *G, int max_vertices);
 
 void add(Graph *G, int u, int v, int w);
 
+// Graph : List of Edges.
 void Bellman_Algorithm(Graph *G, int starting_vertex){
 
     int path_to[ G->max_vertices+1];
