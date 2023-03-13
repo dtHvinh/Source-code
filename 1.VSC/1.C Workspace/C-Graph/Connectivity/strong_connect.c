@@ -1,155 +1,231 @@
+#include<stdbool.h>
+#include<stddef.h>
 #include<stdio.h>
-#include <stdio.h>
-#define MAX_Length 20
 
-typedef struct 
-{
-    /* data */
-    int u, v; // u = dinh 1, v = dinh 2
-}edge;
+#define MAX_VALUE 9999
+#define enter printf("\n")
 
-typedef struct 
-{
-    /* data */
-    int n, m; // n = so dinh, m = so canh
-    edge data[MAX_Length]; // e = tap hop cac canh
-}graph;
+int min(int a, int b) { return a > b ? b : a;}
 
-typedef struct 
-{
-    int data[MAX_Length];
-    int size;
+
+
+// Implementation of a list data structure using an array.
+typedef struct{
+    int l_i;
+    int arr[ MAX_VALUE ];
 }list;
 
-void makeNull(list *L){
-    L->size = 0;
-}
-int elementAt(list *L, int x){
-    return L->data[x];
-}
-void pushList(list *L, int x){
-    L->data[L->size] = x;
-    L->size++;
-}
+typedef list stack;
 
-void initGraph(graph *G, int n){
-    G->n = n;
-    G->m = 0;
-}
+int  element_at(list *L, int position);
+void makenull(list *L);
+void push(list *L, int value);
+void pop(list *L);
 
-void addEdge(graph *G, int u, int v){
-    if( u == v) return;
-    G->data[G->m].u = u;
-    G->data[G->m].v = v;
-    G->m++;
-} 
-int adjacent(graph *G, int u, int v){
-    int i;
-    for(i = 0; i<=G->m; i++){
-        if (G->data[i].u == u && G->data[i].v == v)
-        {
-            return 1;
-        }
-    }
-    return 0;
-}
-
-list neighbors(graph *G, int x){
-    list listVertex;
-    makeNull(&listVertex);
-    int i;
-    for(i = 1; i<=G->n; i++){
-        if (adjacent(G, x, i) == 1)
-        {
-            pushList(&listVertex, i);
-        }
-    }
-    return listVertex;
-}
+bool isEmpty(stack *L);
+int  top(stack *L);
 
 
-#define MAX_ELEMENTS 100
-typedef struct {
-	int data [MAX_ELEMENTS];
-	int size;
-}Stack;
-void make_null_stack(Stack *S){
-	S->size=0;
-}
-void push(Stack *S, int x){
-	S->data[S->size] = x;
-	S->size++;
-}
-int top (Stack *S){
-	return S->data[S->size-1];
-}
-void pop(Stack *S){
-	 S->size--;
-}
-int empty(Stack *S){
-	return S->size == 0;
-}
-int num[100];
-int min_num[100];
-int on_stack[100];
-int k = 1;
-Stack S;
 
-int min(int a,int b){
-	return a < b ? a : b;
-}
 
-void strong_connect(graph* G, int x) {
-	num[x] = min_num[x] = k; k++;
-	push(&S, x);
-	on_stack[x] = 1;
-	list list = neighbors(G, x);
-	
-	int j;
-	for (j = 0; j < list.size; j++) {
-		int y = elementAt(&list, j);
-		if (num[y] < 0) {
-			strong_connect(G, y);
-			min_num[x] = min(min_num[x], min_num[y]);
-		} else if (on_stack[y])
-			min_num[x] = min(min_num[x], num[y]);
-	}
-		
-	printf("min_num[%d] = %d\n", x, min_num[x]);
-	if (num[x] == min_num[x]) {
-		printf("%d la dinh khop.\n", x);
-		int w;
-		do {
-			w = top(&S);
-			pop(&S);
-			on_stack[w] = 0;
-		} while (w != x);
-	}
-}
-	
+// Directed graph with adjacency list implementation.
+typedef struct 
+{
+    int u, v;
+}edge; 
+
+typedef struct{
+    int m_v;                    // Max vertices in Graph.
+    int c_e;                    // The current number of edges in Graph. @note This value subtracts 1 to get the index of the last edge.
+    edge edges[ MAX_VALUE ];    // Array of edges in the Graph.
+}Graph;
+
+
+
+void init_Graph(Graph *G, int m_v);
+list neighbors(Graph *G, int vertex);
+void add(Graph *G, int s, int e);
+
+
+// Strong connect components algorithm Implementation.
+void strong_connect(Graph *G, int cur_ver, int *k, int num[], int min_num[], stack *st, int on_stack[]);
+
+void scc(Graph *G);
+
+// Main function.
 int main(){
-	graph a;
-	freopen("dothi.txt","r",stdin);
-	int n,m;
-	scanf("%d%d",&n,&m);
-	initGraph(&a,n);
-	while(m-->=1){
-		int u,v;
-		scanf("%d%d",&u,&v);
-		addEdge(&a,u,v);
-	}
-	
-	int v;
-	for (v = 1; v <= n; v++) {
-		num[v] = -1;
-		on_stack[v] = 0;
-	}
+    Graph G;
+    init_Graph(&G, 8);
 
-	
-	make_null_stack(&S);
-	for (v = 1; v <= n; v++) {
-		if (num[v] == -1) strong_connect(&a, v);
-	}	
-	return 0;	
-	
+    add(&G, 1, 2);
+    add(&G, 1, 3);
+    add(&G, 2, 1);
+    add(&G, 2, 8);
+    add(&G, 3, 4);
+    add(&G, 3, 5);
+    add(&G, 4, 2);
+    add(&G, 4, 7);
+    add(&G, 4, 8);
+    add(&G, 5, 3);
+    add(&G, 5, 7);
+    add(&G, 6, 7);
+    add(&G, 7, 6);
+    add(&G, 8, 7);
+
+    scc(&G);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function.
+
+/// @brief Initialize the list.
+/// @param L Input List.
+void makenull(list *L){ L->l_i = 0; };
+
+/// @brief Add an element at the end of the list.
+/// @param L Input List.
+/// @param value That Element`s value.
+void push(list *L, int value){
+    L->arr[ L->l_i ] = value;
+    L->l_i++;
+}
+
+/// @brief Return the value at the top (end) of the stack (List)
+/// @param L Input List
+/// @return Top element value.
+int top(list *L){ return L->arr[ L->l_i-1 ]; }
+
+/// @brief Check whether the Stack is empty.
+/// @param L Input List.
+/// @return "1" if empty or "0". 
+bool isEmpty(list *L){ return !L->l_i; }
+
+/// @brief Delete an element at the end of the %List.
+/// @param L Input List.
+void pop(list *L){
+    if( !L->l_i ){
+        printf("The List already empty!");
+        return;
+    }
+    L->l_i--;
+}
+
+/// @brief Represent the value of position.
+/// @param L Input List.
+/// @param position Input position.
+/// @return Value of the elemnt at that position in the List.
+int element_at(list *L, int position){
+    if( position >= L->l_i){
+        printf("Out of bound. ");
+        return -1;
+    }
+    return L->arr[ position ];
+}
+
+/// @brief Initialize the Graph.
+/// @param G Input Graph.
+/// @param m_v Input max vertices.
+void init_Graph(Graph *G, int m_v){
+    G->c_e = 0;
+    G->m_v = m_v;
+}
+
+/// @brief Add an edge to The Graph.
+/// @param G Input Graph.
+/// @param s Input the start Vertex.
+/// @param e Input the end Vertex. 
+/// @param w Input the weight of path from "s" to "e".
+void add(Graph *G, int s, int e){
+    G->edges[ G->c_e ].u = s;
+    G->edges[ G->c_e ].v = e;
+    G->c_e++;
+}
+
+
+/// @brief Return a /list/ of adjacent vertices for the Input /vertex/ in the adjacency list representation of the /graph/.
+/// @param G Input Graph
+/// @param vertex Input vertex.
+/// @return list.
+list neighbors(Graph *G, int vertex){
+    list res; makenull(&res);
+
+    for(size_t index = 0; index < G->c_e; index++){
+        int u = G->edges[ index ].u;
+        int v = G->edges[ index ].v;
+        /// Because the Graph is an directed Graph so this only allow u-->v.
+        if( u == vertex ) push(&res, v);
+    } 
+
+    return res;
+}
+
+
+void strong_connect(Graph *G, int cur_ver, int *k, int num[], int min_num[], stack *st, int on_stack[]){
+    num[cur_ver]= min_num[cur_ver] = *k;
+    *k += 1;
+
+    push(st, cur_ver);
+    on_stack[ cur_ver ]= 1;
+    
+
+    list list = neighbors(G, cur_ver);
+
+    for(size_t index = 0; index < list.l_i; index++){
+        int vertex = element_at(&list, index);
+        if( num[ vertex ] == -1){
+            strong_connect(G, vertex, k, num, min_num, st, on_stack);
+            min_num[cur_ver] = min( min_num[cur_ver], min_num[vertex]);
+        }
+        else if( on_stack[vertex] ){
+            min_num[cur_ver] = min( min_num[cur_ver], num[vertex]);
+        }
+    }
+
+    if( min_num[cur_ver] ==  num[cur_ver] ){
+        int w;
+        do{
+            w = top(st); pop(st);
+            printf("%d ", w);
+            on_stack[cur_ver] = 0;
+        }while( w != cur_ver);
+        printf("\n");
+    }
+}
+
+void scc(Graph *G){
+    int num[G->m_v +1];
+    int min_num[G->m_v +1];
+    int on_stack[G->m_v +1];
+
+    for(size_t i = 1; i <= G->m_v; i++){
+        num[i] = -1;
+        min_num [i] = 0;
+        on_stack[i] = 0;
+    }
+    int k = 1;
+
+    stack st;
+    makenull(&st);
+    for(size_t vertex = 1; vertex <= G->m_v; vertex++){
+        if( num[ vertex ] == -1){
+            strong_connect(G, vertex, &k, num, min_num, &st, on_stack);
+        }
+    }
 }

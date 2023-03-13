@@ -108,12 +108,15 @@
     "thread": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stdbool.h": "c",
+    "stack": "cpp",
+    "ciso646": "cpp"
   },
-  "C_Cpp.errorSquiggles": "enabled",          // Gach duoi cho sai
+  "C_Cpp.errorSquiggles": "enabled",          // Error squiggle
 
-  "editor.tokenColorCustomizations": {        // chinh mau comment
-    "comments": "#0e9d1a"
+  "editor.tokenColorCustomizations": {        // The comment color.
+    "comments": "#596159"
   },
   "java.project.sourcePaths": [
     "3.JAVA Workspace/Z.BaiTap/Buoi 2",

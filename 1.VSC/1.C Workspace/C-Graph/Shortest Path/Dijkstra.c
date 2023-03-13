@@ -29,20 +29,25 @@ void Dijkstra(graph *g, int s){
     int previous[g->max_vertex+1];
     // Shortest path from 's' to each shortest[index].
     int shortest[g->max_vertex+1];
+
+    // Initialize these 3 array.
     for(int i = 1; i <= g->max_vertex; i++){
-        visited[i] = 0;
-        previous[i] = 0;
+        visited[i] = previous[i] = 0;
         shortest[i] = inf;
     }
+
+    // Initialize starting_point characteristics.
     shortest[s] = 0 ;
     previous[s] = -1;
 
-     for(size_t i = 1; i <= g->max_vertex; i++){
+    // Loop /max_vertices/ times.
+    for(size_t i = 1; i <= g->max_vertex; i++){
         // Each times. Find the shortest path which its vertex havent visited yet.
         int chosen_vertex;
         int min_path = inf;
         for(size_t vertex = 1; vertex <= g->max_vertex; vertex++){
-            if( !visited[ vertex ] && shortest[ vertex ] < min_path){
+            if( !visited[ vertex ] && shortest[ vertex ] < min_path)
+            {
                 min_path      = shortest[ vertex ];
                 chosen_vertex = vertex;
             }
@@ -70,17 +75,17 @@ void Dijkstra(graph *g, int s){
 
 int main(){
     graph g;
-    // init_graph(&g, 6);
-    // add(&g, 1, 2, 7);
-    // add(&g, 1, 3, 1);
-    // add(&g, 2, 4, 4);
-    // add(&g, 2, 6, 1);
-    // add(&g, 3, 2, 5);
-    // add(&g, 3, 5, 2);
-    // add(&g, 3, 6, 7);
-    // add(&g, 5, 4, 5);
-    // add(&g, 5, 2, 2);
-    // add(&g, 6, 5, 3);
+    init_graph(&g, 6);
+    add(&g, 1, 2, 7);
+    add(&g, 1, 3, 1);
+    add(&g, 2, 4, 4);
+    add(&g, 2, 6, 1);
+    add(&g, 3, 2, 5);
+    add(&g, 3, 5, 2);
+    add(&g, 3, 6, 7);
+    add(&g, 5, 4, 5);
+    add(&g, 5, 2, 2);
+    add(&g, 6, 5, 3);
 
     Dijkstra(&g, 1);
     return 0;

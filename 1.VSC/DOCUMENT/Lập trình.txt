@@ -74,6 +74,7 @@ public:
     Stack(int size) : top(-1), capacity(size) {       <--Viết tắt
         elements = new T[capacity];
     }
+}
 
 struct person{
     int age;
@@ -84,13 +85,21 @@ int main(){
     person a = person{1,'v'};                          <--Viết tắt
     std::cout<<a.name;
 }
-------------------------------------------------------------------------------------------------------------------------------------------Có thể khai báo hàm trước rồi định nghĩa hàm sau:
+------------------------------------------------------------------------------------------------------------------------------------------
+Có thể khai báo hàm trước rồi định nghĩa hàm sau:
 Ví dụ:
+
 int max(int a, int b);
+
+int main(){
+    ...
+}
 
 int max(int a, int b) return a>b?a:b;
 ------------------------------------------------------------------------------------------------------------------------------------------
 Muốn khai báo mảng 2 chiều làm tham số phải:
 Ví dụ: int ???(int arr[h][c],....){ ....;}
-
+Vì bản chất phải khai báo arr[??][??] chứ ko được để trống. arr[h][c] hoặc arr[][c] đều được vì để trống ô vuông đầu tức là giá trị của ô 
+vuông đầu và sau bằng nhau (Tùy trường hợp!).
+------------------------------------------------------------------------------------------------------------------------------------------
 
